@@ -10,7 +10,7 @@ EVALUACIÓN TÉCNICA DE DESARROLLO DE MICROSERVICIOS
 1. Clone the following projects in the $HOME directory
 
 ```
-cd ${HOME}
+
 git clone https://github.com/MarioADguez/Evaluaci-n_t-cnica_microservicios.git
 
 ```
