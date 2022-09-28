@@ -37,3 +37,18 @@ def records(num:int=None,serie:list=None,save:bool=True):
     connection.close()
     
     return None
+
+def view_records():
+    connection = sqlite3.connect(file)
+    cursor = connection.cursor()
+    query='SELECT * FROM register'
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    id=[]
+    serie=[]
+    for row in rows:
+       id.append(row[0])
+       serie.append(row[1])
+    data=pd.DataFrame({"Numero":id,"Serie Fibonacci":serie})
+    return(data)
+
