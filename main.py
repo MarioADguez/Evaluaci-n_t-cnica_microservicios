@@ -22,3 +22,18 @@ def read_root() -> dict:
 def serie(numero:int=None):
     serie=serie_fibonacci(numero)
     return (serie)
+
+@app.get("/view_records",summary = "endpoint para visualizar el historico de series", description = "Recors")
+def view():
+    data=view_records()
+    if data is None:
+        return("No hay historicos")
+    else:    
+        return(data.to_dict('records'))
+    
+@app.post("/delete_record",summary = "endpoint para eliminar del registro los numeros", description = "Recors")
+def delete(numero:int=None):
+    records(numero,save=False)
+
+    return(f"El registro para el numero {numero} fue eliminado")
+
