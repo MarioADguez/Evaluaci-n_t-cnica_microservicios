@@ -22,7 +22,7 @@ conda create --yes --name py39 python=3.9 pandas fastapi[all] uvicorn
 
 ```
 
-Run the app
+## Run the app
 
 ```
 conda activate py39 && cd Evaluaci-n_t-cnica_microservicios && uvicorn main:app --reload
