@@ -18,7 +18,7 @@ git clone https://github.com/MarioADguez/Evaluaci-n_t-cnica_microservicios.git
 ## Run locally 
 
 ```
-conda create --yes --name py39 python=3.9 pandas fastapi[all] uvicorn 
+conda create --yes --name py39 python=3.9 pandas fastapi[all] uvicorn sqlite3
 
 ```
 
