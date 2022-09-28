@@ -7,7 +7,7 @@ EVALUACIÓN TÉCNICA DE DESARROLLO DE MICROSERVICIOS
 
 # Run this project
 
-1. Clone the following projects in the $HOME directory
+1. Clone the following projects in the directory
 
 ```
 
